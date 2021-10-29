@@ -47,6 +47,7 @@ const Wrapper = styled.section`
   .logo {
     justify-self: center;
     max-width: 20rem;
+    width: 15rem;
   }
   .sidebar-header {
     display: flex;
@@ -73,6 +74,7 @@ const Wrapper = styled.section`
   .close-sidebar {
     font-size: 2.5rem;
     transition: var(--transition);
+    margin-right: 1rem;
   }
   .close-sidebar:hover {
     color: red;
@@ -101,6 +103,12 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 992px) {
     .sidebar {

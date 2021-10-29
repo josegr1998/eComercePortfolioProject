@@ -47,11 +47,11 @@ const CartTotal = () => {
 
 const Wrapper = styled.article`
   margin: 0 auto;
-
   h4 {
     display: grid;
-    grid-template-columns: 15rem auto;
+    grid-template-columns: 10rem auto;
     margin-top: 1rem;
+    font-size: 1rem;
   }
   .shopping-btn.checkout {
     width: 100%;
@@ -76,6 +76,11 @@ const Wrapper = styled.article`
     display: flex;
     justify-content: flex-end;
     /* width: var(--max-width); */
+    h4 {
+      display: grid;
+      grid-template-columns: 15rem auto;
+      margin-top: 1rem;
+    }
   }
 `;
 export default CartTotal;

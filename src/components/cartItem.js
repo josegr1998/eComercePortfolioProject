@@ -18,7 +18,7 @@ const CartItem = (props) => {
   return (
     <article className='product-container'>
       <div className='main-info' style={{ marginRight: "9rem" }}>
-        <div className='img-container' style={{ height: "75px" }}>
+        <div className='img-container'>
           <img
             src={item.img}
             alt=''

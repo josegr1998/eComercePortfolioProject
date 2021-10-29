@@ -15,7 +15,7 @@ const Nav = () => {
       <div className='section-center'>
         <div className='nav-header'>
           <Link to='/'>
-            <img src={comfy} className='logo' alt='' style={{ with: "2rem" }} />
+            <img src={comfy} className='logo' alt='' />
           </Link>
 
           <FaBars className='nav-toggle' onClick={openSidebar} />
@@ -59,7 +59,7 @@ const Wrapper = styled.nav`
   }
   .logo {
     /* width: 70%; */
-    max-width: 20rem;
+    width: 15rem;
     /* height: 3rem; */
   }
   .nav-toggle {
@@ -101,10 +101,15 @@ const Wrapper = styled.nav`
       justify-content: space-between;
     }
     .logo {
-      width: 20rem;
+      width: 15rem;
     }
     .cart-btn-wrapper {
       display: flex;
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .logo {
+      width: 20rem;
     }
   }
 `;

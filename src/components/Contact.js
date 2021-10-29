@@ -65,7 +65,7 @@ const Wrapper = styled.section`
   .submit-btn {
     width: 30%;
     border: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* background: transparent; */
     cursor: pointer;
     transition: var(--transition);
@@ -85,6 +85,11 @@ const Wrapper = styled.section`
     .form-control {
       height: 2.8rem;
       border: transparent;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .submit-btn {
+      font-size: 1.5rem;
     }
   }
 `;

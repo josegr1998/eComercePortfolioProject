@@ -31,7 +31,7 @@ const Wrapper = styled.footer`
     height: 7rem;
     display: flex;
     justify-content: center;
-    gap: 7rem;
+    gap: 4rem;
     align-items: center;
   }
   background: var(--clr-grey-1);
@@ -48,6 +48,17 @@ const Wrapper = styled.footer`
     gap: 3rem;
     font-size: 1.7rem;
     align-items: center;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      gap: 7rem;
+    }
+    h5 {
+      font-size: 1.2rem;
+    }
   }
 `;
 export default Footer;

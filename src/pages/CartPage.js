@@ -87,7 +87,7 @@ const Wrapper = styled.section`
   }
   .product-container {
     display: grid;
-    grid-template-columns: 250px 1fr 1fr;
+    grid-template-columns: 150px 1fr 1fr;
     /*fijar que puedo hacer con el width de las columnas */
     column-gap: 1rem;
     /* justify-items: center; */
@@ -95,6 +95,9 @@ const Wrapper = styled.section`
     margin-top: 2rem;
     text-transform: capitalize;
     margin-bottom: 2rem;
+  }
+  .img-container {
+    width: 150px;
   }
   .shopping-btn:hover {
     cursor: pointer;
@@ -113,6 +116,9 @@ const Wrapper = styled.section`
     justify-items: center;
     text-transform: capitalize;
     display: none;
+  }
+  .info {
+    text-align: center;
   }
   .price,
   .amount-btns,
@@ -137,6 +143,9 @@ const Wrapper = styled.section`
     color: red;
     transform: scale(1.1);
     cursor: pointer;
+  }
+  .icon-container {
+    text-align: center;
   }
   .price {
     display: none;
@@ -168,6 +177,10 @@ const Wrapper = styled.section`
     }
     .mini-price {
       display: none;
+    }
+    .img-container {
+      width: 100%;
+      height: 75px;
     }
   }
 `;
